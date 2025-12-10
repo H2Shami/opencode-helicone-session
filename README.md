@@ -5,9 +5,9 @@ An OpenCode plugin that automatically injects Helicone session headers into your
 ## Installation
 
 ```bash
-npm install opencode-helicone-session
+npm install -g opencode-helicone-session
 # or
-bun add opencode-helicone-session
+bun add -g opencode-helicone-session
 ```
 
 ## Usage
@@ -16,24 +16,8 @@ Add the plugin to your `opencode.json`:
 
 ```json
 {
+  "$schema": "https://opencode.ai/config.json",
   "plugin": ["opencode-helicone-session"],
-  "provider": {
-    "helicone": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "Helicone",
-      "options": {
-        "baseURL": "https://anthropic.helicone.ai",
-        "headers": {
-          "Helicone-Auth": "Bearer your-api-key"
-        }
-      },
-      "models": {
-        "claude-sonnet-4-20250514": {
-          "name": "Claude Sonnet 4"
-        }
-      }
-    }
-  }
 }
 ```
 
