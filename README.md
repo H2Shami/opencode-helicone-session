@@ -1,6 +1,6 @@
 # opencode-helicone-session
 
-An OpenCode plugin that automatically injects Helicone session tracking headers into your LLM requests. Groups all requests from the same OpenCode session together in Helicone's dashboard.
+An OpenCode plugin that automatically injects Helicone session headers into your LLM requests. This groups all requests from the same OpenCode session together in Helicone's dashboard.
 
 ## Installation
 
